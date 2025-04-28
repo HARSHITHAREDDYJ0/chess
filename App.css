@@ -1,0 +1,127 @@
+.app {
+  text-align: center;
+  background-color: #121212;
+  color: white;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chessboard-container {
+  margin-right: 3rem;
+}
+
+.move-history-container {
+  text-align: left;
+  max-width: 300px;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.status {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.move-history {
+  margin-top: 2rem;
+}
+
+.move-history h2 {
+  color: #f0d9b5;
+}
+
+.move-history ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.move-history li {
+  padding: 5px;
+  background-color: #333;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+.winner-message {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #00ff95;
+  margin-top: 2rem;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+.winner-banner {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: gold;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 0.75rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px gold;
+  z-index: 10;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+.app {
+  position: relative;
+  text-align: center;
+  background-color: #121212;
+  color: white;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
